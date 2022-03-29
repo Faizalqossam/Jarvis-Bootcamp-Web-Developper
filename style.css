@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+nav {
+    background-color: #4361ee;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+
+section.blog{
+    /* border: 1px solid; */
+    width: 900px;
+    margin: auto;
+}
+
+section.blog article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+section.blog article img{
+    border-radius: 25px;
+}
+
+section.blog article .info{
+    margin: 20px;
+}
