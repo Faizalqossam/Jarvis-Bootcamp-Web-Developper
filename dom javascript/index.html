@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div id="content">
+        <label for="">Search somthingg</label>
+        <input  id="keyword" type="text" placeholder="Search...">
+        <button id="btnSubmit">Submit</button>
+    </div>
+
+    <ul id="ul">
+        
+    </ul>
+
+    <a id="link" href="welcome.html">go</a>
+</body>
+<script>
+    let link = document.querySelector('#link').addEventListener('click',function(e){
+        e.preventDefault()
+        alert("oke")
+    })
+
+    //dom
+    // let h1 = document.getElementById("judul")
+    // console.log(h1);
+    // h1.innerHTML = "Hellow Faiz"
+
+    // let lists = document.getElementsByClassName("list-item")
+    // console.log(lists);
+
+    // lists[1].style.color = "red"
+
+    // let html = `<h1 id="judul">Hello world</h1>
+    // <ul>
+    //     <li class="list-item">Item1</li>
+    //     <li class="list-item">Item2</li>
+    //     <li class="list-item">Item3</li>
+    // </ul>`
+
+    // let konten = document.querySelector("#content")
+    // konten.innerHTML = html
+
+    //dom event
+    let btnSubmit = document.querySelector("#btnSubmit")
+    let keyword = document.querySelector("#keyword")
+    let ul = document.querySelector('#ul')
+    btnSubmit.addEventListener('click', function(){
+        ul.innerHTML = `<li>${keyword.value}</li>`
+    })
+
+    // keyword.addEventListener('keyup',function(){
+    //     console.log(keyword.value);
+    // })
+
+</script>
+</html>
